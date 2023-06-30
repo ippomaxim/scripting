@@ -5,13 +5,13 @@ using UnityEditor.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
+    //Имя сцены, которую нужно перезапустить
     public string sceneName;
 
-    // Start is called before the first frame update
-    void OnTriggerEnter(Collider other)
+
+    void OnTriggerEnter()
     {
+        //Перезапуск сцены
         EditorSceneManager.LoadScene(sceneName);
     }
-
-   
 }
